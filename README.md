@@ -1,16 +1,5 @@
-# welcome_signin_signup
+<h1 align="center" id="title">Responsive Welcome Login and Sign up page - Flutter UI</h1>
 
-A new Flutter project.
+<p align="center"><img src="https://github.com/OsamaBsharat/Welcome-signin-signup-screen-flutter/blob/main/UI.png?raw=true" alt="project-image"></p>
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p id="description">We craft three adaptive screens starting with an initial welcome screen that greets users upon opening the app. Users are presented with two choices: to log in by tapping the login button seamlessly transitioning to the login screen or to sign up by selecting the signup button leading them to the signup screen. These screens are meticulously designed to ensure optimal performance across Android iOS Web and Desktop platforms</p>
