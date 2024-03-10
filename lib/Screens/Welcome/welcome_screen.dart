@@ -8,6 +8,7 @@ class WelcomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Body(),
+      bottomNavigationBar: Text("© Osama Bsharat 2024"),
     );
   }
 }
