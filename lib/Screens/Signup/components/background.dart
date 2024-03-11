@@ -20,7 +20,7 @@ class Background extends StatelessWidget {
             top: 0,
             left: 0,
             child: Image.asset("assests/images/signup_top.png"),
-            width: size.width * 0.35,
+            width: size.width * 0.4,
           ),
           Positioned(
             bottom: 0,
