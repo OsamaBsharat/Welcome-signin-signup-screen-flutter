@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:welcome_signin_signup/Screens/Login/login_screen.dart';
 import 'package:welcome_signin_signup/Screens/Signup/components/background.dart';
+import 'package:welcome_signin_signup/Screens/Signup/components/body.dart';
 import 'package:welcome_signin_signup/components/already_have_an_account_check.dart';
 import 'package:welcome_signin_signup/components/rounded_button.dart';
 import 'package:welcome_signin_signup/components/rounded_input_field.dart';
@@ -14,41 +15,7 @@ class SignupScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Background(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              "SIGNUP",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 20,
-              ),
-            ),
-            SvgPicture.asset("assests/icons/signup.svg"),
-            RoundedInputField(
-              hintText: "Example@Example.com",
-              onChanged: (vale) => {},
-              icon: Icons.person,
-            ),
-            RoundedPasswordField(onChanged: (value) => {}),
-            RoundedButton(text: "SIGNUP", press: () => {}),
-            AlreadyHaveAnAccountCheck(
-              press: () => {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) {
-                      return LoginScreen();
-                    },
-                  ),
-                )
-              },
-              login: false,
-            )
-          ],
-        ),
-      ),
+      body: Body(),
     );
   }
 }
