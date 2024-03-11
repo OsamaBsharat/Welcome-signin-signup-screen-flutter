@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:welcome_signin_signup/Screens/Login/components/background.dart';
+import 'package:welcome_signin_signup/Screens/Signup/signup_screen.dart';
 import 'package:welcome_signin_signup/components/already_have_an_account_check.dart';
 import 'package:welcome_signin_signup/components/rounded_button.dart';
 import 'package:welcome_signin_signup/components/rounded_input_field.dart';
@@ -45,7 +46,11 @@ class Body extends StatelessWidget {
           SizedBox(
             height: size.height * 0.03,
           ),
-          AlreadyHaveAnAccountCheck(press: () {}),
+          AlreadyHaveAnAccountCheck(press: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return SignupScreen();
+            }));
+          })
         ],
       ),
     );

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:welcome_signin_signup/Screens/Login/login_screen.dart';
+import 'package:welcome_signin_signup/Screens/Signup/signup_screen.dart';
 import 'package:welcome_signin_signup/Screens/Welcome/components/background.dart';
 import 'package:welcome_signin_signup/components/rounded_button.dart';
 import 'package:welcome_signin_signup/constants.dart';
@@ -51,7 +52,11 @@ class Body extends StatelessWidget {
                 text: "SIGNUP",
                 color: primaryLightColor,
                 textColor: Colors.black,
-                press: () {}),
+                press: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return SignupScreen();
+                  }));
+                })
           ],
         ),
       ),
